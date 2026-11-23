@@ -11,7 +11,7 @@ function News() {
 
   function checkInput() {
     //console.log("check input");
-    const regex = /(^0[1-9]|1[0-2]\/0[1-9]|[1-2][0-9]|3[01])$/;
+    const regex = /^(0[1-9]|1[0-2])\/(0[1-9]|[1-2][0-9]|3[01])$/;
     if(regex.test(userInput.current.value)) {
       //console.log("valid input");
       inputError.current.classList.add("hide");
@@ -45,7 +45,7 @@ function News() {
     <div className="newsBody">
       <input type="text" placeholder="Month/Date" id="input" onKeyDown={(e) => {if(e.key == "Enter") {checkInput()}}} ref={userInput}/>
       <label htmlFor="input"><button onClick={checkInput}>Search</button></label>
-      <p className="error hide" ref={inputError}>Bad input, please follow format month (##) / day (#-##)</p>
+      <p className="error hide" ref={inputError}>Bad input, please follow format month (##) / day (##)</p>
       <p className="dayDisplay">Showing articles for {date} (click title to visit)</p>
       <div className="articles">
         <ul>
