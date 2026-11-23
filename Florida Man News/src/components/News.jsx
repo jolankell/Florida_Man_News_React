@@ -56,7 +56,7 @@ function News() {
             :
             articles.map((article, index) =>
               <li key={index}>
-                <a href={article.url} target="_blank">{article.title} - {article.source}</a>
+                <a href={article.url} target="_blank">{article.title} - {article.source} ({article.date.slice(0, 4)})</a>
               </li>
             )
         }
