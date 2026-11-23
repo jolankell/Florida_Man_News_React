@@ -1,0 +1,56 @@
+
+div.home {
+    justify-items: center;
+}
+
+.images {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+img {
+    width: 50%;
+    flex: 1 1 200px;
+}
+
+div.btnContainer {
+    position: absolute;
+    bottom: 5px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  background-color: rgb(37, 123, 252);
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+  background-color: rgb(20, 107, 238);
+}
+
+.btn:active {
+  transform: scale(0.98);
+}
+
+header {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: transparent;
+    color: white;
+}
+
+h1 {
+    font-size: 50px;
+}

@@ -1,0 +1,27 @@
+nav, footer {
+  display: flex;
+  background: linear-gradient(to right,rgb(101, 100, 100), rgb(29, 28, 28));
+}
+
+nav {
+  padding: 11px;
+}
+
+footer {
+  justify-content: center;
+  font-size: large;
+  padding: 9px;
+}
+
+nav a {
+  margin: 12px 20px;
+}
+
+footer a {
+  margin: 10px;
+}
+
+nav a, footer a {
+  color: black;
+  font-size: large;
+}
